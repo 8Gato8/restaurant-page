@@ -52,3 +52,43 @@ ul {
     width: 200px;
   }
 }
+
+/* content */
+
+.content {
+  max-width: 1440px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+/* homepage */
+.homepage {
+  display: grid;
+  grid-template:
+    'title img' auto
+    'info img' 1fr
+    / 1fr 1fr;
+  gap: 15px;
+}
+
+.homepage__title {
+  grid-area: title;
+  font-size: 42px;
+}
+
+.homepage__info-block {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.homepage__info-text {
+  font-size: 24px;
+}
+
+.homepage__img {
+  grid-area: img;
+  width: 100%;
+  border-radius: 8px;
+}

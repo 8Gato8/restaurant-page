@@ -57,7 +57,7 @@ ul {
 
 .content {
   max-width: 1440px;
-  padding: 100px 0;
+  padding: 100px 50px;
   margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ ul {
     'title img' auto
     'info img' 1fr
     / 1fr 1fr;
-  gap: 15px;
+  gap: 25px;
 }
 
 .homepage__title {
@@ -91,4 +91,22 @@ ul {
   grid-area: img;
   width: 100%;
   border-radius: 8px;
+}
+
+@media (max-width: 762px) {
+  .content {
+    padding: 50px;
+  }
+
+  .homepage {
+    grid-template:
+      'title' auto
+      'img' auto
+      'info' auto
+      / 1fr;
+  }
+
+  .homepage__title {
+    text-align: center;
+  }
 }

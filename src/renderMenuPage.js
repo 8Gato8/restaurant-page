@@ -82,6 +82,7 @@ export default function renderMenuPage() {
 
   const menuTitle = document.createElement('h1');
   menuTitle.classList.add('menu__title', 'title');
+  menuTitle.textContent = 'Menu';
 
   const categories = document.createElement('ul');
   categories.classList.add('menu__categories');
@@ -126,6 +127,6 @@ export default function renderMenuPage() {
     categories.append(categoryElement);
   }
 
-  menu.append(categories);
+  menu.append(menuTitle, categories);
   content.append(menu);
 }

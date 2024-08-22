@@ -5,7 +5,7 @@ export default function renderHomePage() {
   homepage.classList.add('homepage');
 
   const title = document.createElement('h1');
-  title.classList.add('homepage__title');
+  title.classList.add('homepage__title', 'title');
   title.textContent = 'Cutty Cat Restaurant';
 
   const infoBlock = document.createElement('div');

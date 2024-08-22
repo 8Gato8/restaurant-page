@@ -23,6 +23,7 @@ export default function renderHomePage() {
 
   const homepageImg = document.createElement('img');
   homepageImg.classList.add('homepage__img');
+  homepageImg.alt = image;
   homepageImg.src = image;
 
   infoBlock.append(firstInfoParagraph, secondInfoParagraph);

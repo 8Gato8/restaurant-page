@@ -1,8 +1,8 @@
 import './style.css';
 
-import renderHomePage from './renderHomePage';
-import renderMenuPage from './renderMenuPage';
-import renderContactsPage from './renderContactsPage';
+import renderHomePage from './js/renderHomePage';
+import renderMenuPage from './js/renderMenuPage';
+import renderContactsPage from './js/renderContactsPage';
 
 const rendererFunctions = {
   renderHomePage,

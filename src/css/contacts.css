@@ -1,0 +1,40 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 70px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 30px;
+  border-radius: 8px;
+  background-color: var(--light-orange);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 8px;
+
+  min-width: 300px;
+}
+
+@media (max-width: 440px) {
+  .contacts__list {
+    padding: 30px 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    min-width: unset;
+    gap: 5px;
+  }
+}

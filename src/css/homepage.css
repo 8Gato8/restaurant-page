@@ -1,0 +1,43 @@
+.homepage {
+  display: grid;
+  grid-template:
+    'title img' auto
+    'info img' 1fr
+    / 1fr 1fr;
+  gap: 25px;
+}
+
+.homepage__title {
+  grid-area: title;
+}
+
+.homepage__info-block {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.homepage__info-text {
+  font-size: 24px;
+}
+
+.homepage__img {
+  grid-area: img;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 762px) {
+  .homepage {
+    grid-template:
+      'title' auto
+      'img' auto
+      'info' auto
+      / 1fr;
+  }
+
+  .homepage__title {
+    text-align: center;
+  }
+}

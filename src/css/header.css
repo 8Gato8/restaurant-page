@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--light-orange);
+  padding: 50px;
+}
+
+@media (max-width: 440px) {
+  .header {
+    padding: 30px;
+  }
+}

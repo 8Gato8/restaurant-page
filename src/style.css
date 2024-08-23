@@ -162,6 +162,11 @@ p {
   gap: 100px;
 }
 
+.menu__img {
+  border-radius: 8px;
+  width: 40%;
+}
+
 .menu__categories {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,5 @@
+import menuImg from './assets/menu.png';
+
 import chickenBreast from './assets/chicken-breast.png';
 import tunaSteak from './assets/tuna-steak.png';
 import beefTenderloin from './assets/beef-tenderloin.png';
@@ -79,9 +81,10 @@ export default function renderMenuPage(content) {
   const menu = document.createElement('section');
   menu.classList.add('menu');
 
-  const menuTitle = document.createElement('h1');
-  menuTitle.classList.add('menu__title', 'title');
-  menuTitle.textContent = 'Menu';
+  const menuImgElement = document.createElement('img');
+  menuImgElement.classList.add('menu__img');
+  menuImgElement.src = menuImg;
+  menuImgElement.alt = 'Menu';
 
   const categories = document.createElement('ul');
   categories.classList.add('menu__categories');
@@ -126,6 +129,6 @@ export default function renderMenuPage(content) {
     categories.append(categoryElement);
   }
 
-  menu.append(menuTitle, categories);
+  menu.append(menuImgElement, categories);
   content.append(menu);
 }

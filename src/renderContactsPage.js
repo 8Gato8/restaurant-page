@@ -13,8 +13,7 @@ const contactsData = {
   },
 };
 
-export default function renderContactPage() {
-  const content = document.querySelector('.content');
+export default function renderContactPage(content) {
   const contacts = document.createElement('section');
   contacts.classList.add('contacts');
 

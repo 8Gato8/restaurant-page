@@ -75,8 +75,7 @@ const menuData = {
   },
 };
 
-export default function renderMenuPage() {
-  const content = document.querySelector('.content');
+export default function renderMenuPage(content) {
   const menu = document.createElement('section');
   menu.classList.add('menu');
 

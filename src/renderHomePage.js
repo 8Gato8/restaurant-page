@@ -1,6 +1,5 @@
 import image from './assets/homepage.png';
-export default function renderHomePage() {
-  const content = document.querySelector('.content');
+export default function renderHomePage(content) {
   const homepage = document.createElement('section');
   homepage.classList.add('homepage');
 

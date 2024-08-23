@@ -38,20 +38,21 @@ p {
 
 .header {
   background-color: var(--light-orange);
-  padding: 40px;
+  padding: 50px;
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .nav-list__button {
   font-size: 24px;
 
   padding: 15px 0;
-  width: max(10vw, 100px);
+  width: max(10vw, 120px);
 
   background-color: var(--white);
   border: none;
@@ -66,6 +67,10 @@ p {
 }
 
 @media (max-width: 440px) {
+  .header {
+    padding: 30px;
+  }
+
   .nav-list {
     flex-direction: column;
     align-items: center;
@@ -82,6 +87,18 @@ p {
   max-width: 1440px;
   padding: 100px 50px;
   margin: 0 auto;
+}
+
+@media (max-width: 762px) {
+  .content {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 440px) {
+  .content {
+    padding: 30px;
+  }
 }
 
 /* title */
@@ -123,10 +140,6 @@ p {
 }
 
 @media (max-width: 762px) {
-  .content {
-    padding: 50px;
-  }
-
   .homepage {
     grid-template:
       'title' auto
